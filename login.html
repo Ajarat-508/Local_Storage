@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Log In Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="" onsubmit="save(event)" class="form-field">
+        <h1 class="form-title">Log In Form</h1>
+        <div class="form-details">
+          <!-- input fields -->
+          <label for="Email">Email:</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            placeholder="sample@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="form-details">
+          <label for="Password">Password:</label>
+          <input
+            class="input"
+            type="password"
+            id="password"
+            placeholder="Your Password"
+            required
+          />
+        </div>
+
+        <div id="container">
+          <div>
+            <input type="checkbox" name="remember" id="check" />
+            <label for="remember">Remember me</label>
+          </div>
+
+          <div>
+            <a href="forgot.html">Forgot Password?</a>
+          </div>
+        </div>
+
+        <!-- button -->
+        <button type="submit" class="btn">Log In</button>
+        <p class="sign">
+          didn't have an account before? <a href="index.html">Sign Up</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
